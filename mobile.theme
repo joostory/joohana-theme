@@ -17,7 +17,7 @@
     <meta name="color:Link" content="#A33446"/>
     <meta name="image:Header" content=""/>
 
-    <link rel="stylesheet" href="pc.css" media="all" />
+    <link rel="stylesheet" href="https://joohana-theme.googlecode.com/git/css/mobile-min.css" media="all" />
     <style type="text/css" media="all">
     {CustomCSS}
     </style>
@@ -150,6 +150,8 @@
         {/block:PermalinkPagination}
     
         </div><!-- .pagination -->
+
+        <div class="fb-like-box" data-href="https://www.facebook.com/pages/JooHananet/243775085712087" data-width="320" data-height="200" data-show-faces="true" data-border-color="#fff" data-stream="false" data-header="true"></div>
 
         <div id="access">
             <div class="menu">
