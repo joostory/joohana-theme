@@ -161,30 +161,25 @@ body {
         color: #81817F; letter-spacing: -1px; line-height: 1.65;
         font: 13px/1.5 '돋움',dotum,Tahoma,AppleGothic,Sans-serif; margin:10px 0 15px;
     }
-    .post-type-text .post-content ul, .post-type-text .post-content .caption ul {
-        padding-left: 30px;
+    .post-content ul, .post-content ol {
+        padding-left:30px;
     }
-        .post-type-text .post-content ul ul {
-            margin-bottom: 0;
-        }
-        .post-type-text .post-content ul li {
+        .post-content ul li {
             list-style-type: disc;
         }
-            .post-type-text .post-content ul ul li {
-                list-style-type: circle;
-            }
-    .post-type-text .post-content ol, .post-type-text .post-content .caption ul {
-        padding-left: 30px;
-    }
-        .post-type-text .post-content ol ol {
+        .post-content ul ul, .post-content ul ol {
             margin-bottom: 0;
         }
-        .post-type-text .post-content ol li {
+    
+        .post-content ol li {
             list-style-type: upper-latin;
         }
-            .post-type-text .post-content ol ol li {
-                list-style-type: lower-latin;
-            }
+        .post-content ol ol, .post-content ol ul {
+            margin-bottom: 0;
+        }
+        .post-content ol ol li, .post-content ul ol li {
+            list-style-type: lower-latin;
+        }
     .post-type-photoset .post-content .html_photoset, .post-type-video .post-content .video-wrap {
         margin-bottom: 20px;
     }
