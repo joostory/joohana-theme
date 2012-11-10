@@ -161,7 +161,7 @@ body {
         color: #81817F; letter-spacing: -1px; line-height: 1.65;
         font: 13px/1.5 '돋움',dotum,Tahoma,AppleGothic,Sans-serif; margin:10px 0 15px;
     }
-    .post-type-text .post-content ul {
+    .post-type-text .post-content ul, .post-type-text .post-content .caption ul {
         padding-left: 30px;
     }
         .post-type-text .post-content ul ul {
@@ -173,7 +173,7 @@ body {
             .post-type-text .post-content ul ul li {
                 list-style-type: circle;
             }
-    .post-type-text .post-content ol {
+    .post-type-text .post-content ol, .post-type-text .post-content .caption ul {
         padding-left: 30px;
     }
         .post-type-text .post-content ol ol {
