@@ -247,7 +247,7 @@ body {
     .post-footer .shorturl {
         float: right;
     }
-.fb-like { margin:10px 0 0; }
+.fb-like { margin: 0 0; }
 .fb-comments { margin: 0 0; }
 
 #post-notes {
