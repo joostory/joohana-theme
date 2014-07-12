@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>{block:SearchPage}Search results for: {SearchQuery} | {/block:SearchPage}{block:IndexPage}{Title}{/block:IndexPage}{block:PostSummary}{PostSummary}{/block:PostSummary}</title>
     {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
-    
+
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
     <link rel="shortcut icon" href="{Favicon}" />
     <link rel="apple-touch-icon" href="{PortraitURL-128}"/>
@@ -40,7 +40,7 @@
                 <a class="hana" href="http://hana.joohana.net" title="Hana Story">Hana Story</a>
             </div>
         </div><!-- #header -->
-        
+
         <div id="main">
             <div id="container">
                 <div id="content">
@@ -72,7 +72,9 @@
                             {block:Source}<p class="quote-source">&mdash; {Source}</p>{/block:Source}
                         {/block:Quote}
                         {block:Link}
-                            <div class="link-wrap"><h3><a href="{URL}" {Target}>{Name}</a></h3></div>
+                            <div class="post-title">
+                                <h3><a href="{URL}" {Target}>{Name}</a></h3>
+                            </div>
                             {block:Description}<div class="description">{Description}</div>{/block:Description}
                         {/block:Link}
                         {block:Chat}
@@ -119,8 +121,8 @@
                         </div><!-- .post-meta -->
 
                     </div><!-- .post -->
-                    
-                    
+
+
                     {block:PermalinkPage}
                     <div class="post-footer">
                         <div class="author">Posted by <a href="{PostAuthorURL}">{PostAuthorName}</a></div>
@@ -148,7 +150,7 @@
             {block:NextPost}<span class="previous-page"><a href="{NextPost}">Newer Post</a></span>{/block:NextPost}
             {block:PreviousPost}<span class="next-page"><a href="{PreviousPost}">Older Post</a></span>{/block:PreviousPost}
         {/block:PermalinkPagination}
-    
+
         </div><!-- .pagination -->
 
         <div class="fb-like-box" data-href="https://www.facebook.com/pages/JooHananet/243775085712087" data-width="320" data-height="200" data-show-faces="true" data-border-color="#fff" data-stream="false" data-header="true"></div>
