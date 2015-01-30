@@ -171,7 +171,7 @@ body {
         .post-content ul ul, .post-content ul ol {
             margin-bottom: 0;
         }
-    
+
         .post-content ol li {
             list-style-type: upper-latin;
         }
@@ -236,32 +236,22 @@ body {
     .share-this-post {
         margin-top: 10px;
     }
-.post-footer {
-    border-top: 1px solid #ccc;
-    font-size: 11px;
-    overflow: hidden;
-    padding: 10px 15px;
-}
-    .post-footer .author {
-        float: left;
-    }
-    .post-footer .shorturl {
-        float: right;
-    }
 .fb-like { margin:0 0; }
 .fb-comments { margin: 0 0; }
 
 #post-notes {
-    border-top: 1px solid #ccc;
     font-size: 12px;
     line-height: 1.6;
+    padding-bottom:10px;
 }
     #post-notes ol {
         margin-bottom:0px;
     }
     #post-notes ol li {
-        border-bottom: 1px dotted #ccc;
-        padding: 10px 20px;
+        padding: 8px 20px;
+    }
+    #post-notes ol li.original_post {
+        display:none;
     }
     #post-notes ol li:last-child {
         border-bottom:0px;
@@ -324,4 +314,3 @@ body {
 .post img { max-width:500px; }
 .post-title h3 { margin: 6px 0 20px; }
 #wrapper { width:600px; }
-
