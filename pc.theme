@@ -122,13 +122,6 @@
 
                     </div><!-- .post -->
 
-
-                    {block:PermalinkPage}
-                    <div class="post-footer">
-                        <div class="author">Posted by <a href="{PostAuthorURL}">{PostAuthorName}</a></div>
-                        <div class="shorturl"><a href="{ShortURL}">&infin; Short URL</a></div>
-                    </div>
-                    {/block:PermalinkPage}
                     {block:PostNotes}
                     <div id="post-notes">{PostNotes}</div>
                     {/block:PostNotes}
@@ -148,6 +141,7 @@
 
         {block:PermalinkPagination}
             {block:NextPost}<span class="previous-page"><a href="{NextPost}">Newer Post</a></span>{/block:NextPost}
+            <span class="page-number">&nbsp;</span>
             {block:PreviousPost}<span class="next-page"><a href="{PreviousPost}">Older Post</a></span>{/block:PreviousPost}
         {/block:PermalinkPagination}
 
