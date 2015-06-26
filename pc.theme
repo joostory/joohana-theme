@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
+    {block:Hidden}
+    <meta name="text:Google Analytics ID" content=""/>
+    <meta name="text:Google Site Verification" content=""/>
+    <meta name="text:Facebook App ID" content=""/>
+    {/block:Hidden}
+
+    {block:IfGoogleSiteVerification}
+    <meta name="google-site-verification" content="{text:Google Site Verification}" />
+    {/block:IfGoogleSiteVerification}
+
     <meta charset="utf-8" />
     <title>{block:SearchPage}Search results for: {SearchQuery} | {/block:SearchPage}{block:IndexPage}{Title}{/block:IndexPage}{block:PostSummary}{PostSummary}{/block:PostSummary}</title>
     {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
@@ -9,11 +19,6 @@
     <link rel="shortcut icon" href="{Favicon}" />
     <link rel="apple-touch-icon" href="{PortraitURL-128}"/>
     <link rel="alternate" type="application/rss+xml" href="{RSS}" />
-
-    <!-- DEFAULT VARIABLES -->
-    {block:Hidden}
-    <meta name="text:Google Analytics ID" content=""/>
-    {/block:Hidden}
 
     <link rel="stylesheet" href="http://static.tumblr.com/udrhgqb/933nizqa1/pc.css" media="all" />
     <style type="text/css" media="all">
@@ -28,13 +33,23 @@
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', '{text:Google Analytics ID}', 'joohana.net');
+        ga('create', '{text:Google Analytics ID}', 'auto');
         ga('send', 'pageview');
     </script>
     {/block:IfGoogleAnalyticsID}
 
 </head>
 <body>
+{block:IfFacebookAppID}
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.3&appId={text:Facebook App ID}";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+{/block:IfFacebookAppID}
 
     <div id="wrapper">
         <div id="header" class="header">
@@ -113,16 +128,25 @@
                             </div><!-- .date -->
                         {/block:Date}
 
-                            <div class="comments">
-                                <a href="{Permalink}#disqus_thread">0 comments</a>
-                            </div>
-
                         {block:NoteCount}
                             <div class="note-count">
                                 <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
                             </div><!-- .note-count -->
                         {/block:NoteCount}
+
+                        {block:IfFacebookAppID}
+                            <div class="comments">
+                                <div class="fb-like" data-href="{Permalink}" data-send="false" data-layout="button_count" data-width="150" data-show-faces="false"></div>
+                            </div>
+                        {/block:IfFacebookAppID}
+
                         </div><!-- .post-meta -->
+
+                        {block:PermalinkPage}
+                        {block:IfFacebookAppID}
+                        <div class="fb-comments" data-href="{Permalink}" data-num-posts="2" data-width="500"></div>
+                        {/block:IfFacebookAppID}
+                        {/block:PermalinkPage}
 
                     </div><!-- .post -->
 

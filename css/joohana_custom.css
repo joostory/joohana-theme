@@ -1,0 +1,31 @@
+.header {
+	width: 600px;
+	height: 450px;
+	background: url(http://static.tumblr.com/udrhgqb/UtJlzak7x/joohana_blog.png) no-repeat 0 0
+}
+#branding {
+	display: none;
+}
+.joohananet a {
+	display: block;
+	text-indent: -50000px;
+	position: absolute;
+	bottom: 0;
+	width: 160px;
+	height: 160px;
+	background: url('http://static.tumblr.com/udrhgqb/4FHlzahby/hana_joo_mix.png') no-repeat;
+}
+.joohananet a.joo {
+	right: 0;
+	background-position: 0px -320px;
+}
+.joohananet a.joo:hover {
+	background-position: 0px -480px;
+}
+.joohananet a.hana {
+	left: 0;
+	background-position: 0px 0px;
+}
+.joohananet a.hana:hover {
+	background-position: 0px -160px;
+}
