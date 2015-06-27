@@ -170,7 +170,7 @@ body {
         .post-content ul ul, .post-content ul ol {
             margin-bottom: 0;
         }
-    
+
         .post-content ol li {
             list-style-type: upper-latin;
         }
@@ -313,10 +313,6 @@ body {
         .pagination .next-page a {
             background-position:right -64px;
         }
-
-.fb-like-box { background-color:#fff;box-shadow: 2px 2px 5px #666; }
-.fb-like-box span iframe { max-width:100%; }
-.fb-like-box.fb_iframe_widget { display:block;width:320px;margin:0 auto; }
 
 .post img { max-width:100%; }
 .post iframe { max-width:100%; }

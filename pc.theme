@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
 <head>
     {block:Hidden}
     <meta name="text:Google Analytics ID" content=""/>
@@ -20,7 +20,7 @@
     <link rel="apple-touch-icon" href="{PortraitURL-128}"/>
     <link rel="alternate" type="application/rss+xml" href="{RSS}" />
 
-    <link rel="stylesheet" href="http://static.tumblr.com/udrhgqb/933nizqa1/pc.css" media="all" />
+    <link rel="stylesheet" href="http://static.tumblr.com/udrhgqb/DiTnqm4gz/pc.css" media="all" />
     <style type="text/css" media="all">
     {CustomCSS}
     </style>
@@ -83,7 +83,7 @@
                             {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
                         {/block:Photo}
                         {block:Photoset}
-                            {Photoset-500}
+                            {Photoset}
                             {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
                         {/block:Photoset}
                         {block:Quote}

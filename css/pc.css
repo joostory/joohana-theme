@@ -305,12 +305,7 @@ body {
             background-position:right -64px;
         }
 
-.fb-like-box { background-color:#fff;box-shadow: 2px 2px 5px #666; }
-.fb-like-box span iframe { max-width:100%; }
-.fb-like-box.fb_iframe_widget { display:block; }
-
-
-.post { padding: 20px 20px 60px 78px; }
+.post { padding: 20px 20px 60px 80px; }
 .post img { max-width:500px; }
 .post-title h3 { margin: 6px 0 20px; }
 #wrapper { width:600px; }
