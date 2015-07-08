@@ -21,6 +21,7 @@ del { text-decoration: line-through; }
 table { border-collapse: collapse; border-spacing: 0; }
 ::selection { background-color:#f9dc41; color:#333;}
 ::-moz-selection { background-color:#f9dc41; color:#333;}
+figure { margin:0 }
 
 /* GLOBAL ELEMENTS */
 body, input, textarea { color: #000; font: 16px/1.6 "helvetica neue",helvetica,arial,sans-serif; }

@@ -20,7 +20,7 @@
     <link rel="apple-touch-icon" href="{PortraitURL-128}"/>
     <link rel="alternate" type="application/rss+xml" href="{RSS}" />
 
-    <link rel="stylesheet" href="http://static.tumblr.com/udrhgqb/7Fgmw4p3b/mobile-min.css" media="all" />
+    <link rel="stylesheet" href="http://static.tumblr.com/udrhgqb/iTknr5hd2/mobile.css" media="all" />
     <style type="text/css" media="all">
     {CustomCSS}
     </style>
