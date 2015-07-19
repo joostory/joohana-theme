@@ -20,7 +20,7 @@
     <link rel="apple-touch-icon" href="{PortraitURL-128}"/>
     <link rel="alternate" type="application/rss+xml" href="{RSS}" />
 
-    <link rel="stylesheet" href="http://static.tumblr.com/udrhgqb/JX3nr5hb4/pc.css" media="all" />
+    <link rel="stylesheet" href="http://static.tumblr.com/udrhgqb/ktvnrqn9d/pc.css" media="all" />
     <style type="text/css" media="all">
     {CustomCSS}
     </style>
@@ -54,9 +54,7 @@
     <div id="wrapper">
         <div id="header" class="header">
             <div id="branding">
-                <h1>
-                    <a href="/">{Title}</a>
-                </h1>
+                <h1><a href="/">{Title}</a></h1>
             </div><!-- #branding -->
         </div><!-- #header -->
 

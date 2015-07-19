@@ -8,11 +8,8 @@
 }
 #branding h1 a, #branding h1 a:active {
 	display: block;
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	width: 160px;
-	height: 160px;
+	position: absolute;right: 0;bottom: 0;
+	width: 160px;height: 160px;
 	background: url('http://static.tumblr.com/udrhgqb/4FHlzahby/hana_joo_mix.png') no-repeat 0px -320px;
 }
 #branding h1 a:hover {
@@ -22,11 +19,8 @@
 	z-index: 1;
 	display: block;
 	text-indent: -50000px;
-	position: absolute;
-	left: 0;
-	bottom: -70px;
-	width: 160px;
-	height: 160px;
+	position: absolute;left: 0;bottom: -70px;
+	width: 160px;height: 160px;
 	background: url('http://static.tumblr.com/udrhgqb/4FHlzahby/hana_joo_mix.png') no-repeat 0px -800px;
 	transition: bottom .5s ease-out 0s;
 	-moz-transition: bottom .5s ease-out 0s;
@@ -34,4 +28,18 @@
 }
 .joohananet a:hover {
 	bottom: 0;
+}
+
+
+@media (max-width: 630px) {
+	.header { width: auto; height:140px; background: none }
+	#branding h1 a, #branding h1 a:active {
+		background-size:120px;background-position-y:-240px;
+		width:120px;height:120px;
+	}
+	#branding h1 a:hover {background-position-y:-360px;}
+	.joohananet a{
+		width:120px;height:120px;bottom:-50px;
+		background-size:120px;background-position-y:-600px
+	}
 }
