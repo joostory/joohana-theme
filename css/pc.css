@@ -35,7 +35,7 @@ th, td { padding: .7em 1.25em; }
 hr { background-color: #ccc; border: 0; color: #555; height: 1px; margin-bottom: 20px; }
 a:link, a:visited { color: #a33446; text-decoration: none; }
 a:focus, a:hover { text-decoration: underline; }
-h1, h2, h3, h4, h5, h6 {  font-weight:normal; clear:both; }
+h1, h2, h3, h4, h5, h6 { clear:both; }
 a img:focus, a img:hover, a img:active { border-color: #a33446; }
 
 body {
@@ -59,13 +59,13 @@ body {
     padding: 40px 0;
     text-align: center;
 }
-    #branding h1 a {
+    #branding a {
         color: #000;
         font: 50px/1 Georgia, serif;
         font-weight: normal;
         text-decoration: none;
     }
-    #branding h1 a:focus, #header h1 a:hover, #header h1 a:active {
+    #branding a:focus, #header a:hover, #header a:active {
         color: #a33446;
     }
 
@@ -154,15 +154,17 @@ body {
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
     }
-    .post-title h3 {
+    .post-title {
         font: 22px/1.6 Malgun Gothic,Georgia,serif;
+        font-weight:bold
     }
-    .post-title h3 a { color:#2e2d2d; }
-    .post-title h3 a:hover { text-decoration:none; }
+    .post-title a { color:#2e2d2d; }
+    .post-title a:hover { text-decoration:none; }
     .post-content {
         color: #81817F; letter-spacing: -1px; line-height: 1.65;
         font: 13px/1.5 '돋움',dotum,Tahoma,AppleGothic,Sans-serif; margin:10px 0 15px;
     }
+    .post-content h2 { font-size:1.4em; margin:20px 0 10px }
     .post-content ul, .post-content ol {
         padding-left:30px;
     }
@@ -308,11 +310,11 @@ body {
 
 .post { padding: 20px 20px 60px 80px; }
 .post img { max-width:500px; }
-.post-title h3 { margin: 6px 0 20px; }
+.post-title { margin: 6px 0 20px; }
 #wrapper { width:600px; }
 
 @media (max-width: 630px) {
-	#branding h1 a {
+	#branding a {
         font: 42px/1 Georgia, serif;
     }
 
@@ -374,8 +376,7 @@ body {
 	.post img { max-width:100%; height:auto }
 	.post iframe { max-width:100%; }
 	.post-type a { left:10px;top:10px; }
-	.post-title { padding:10px 0; }
-	.post-title h3 { padding:0 0 0 68px; line-height:48px; margin:0 }
+	.post-title { padding:10px 0 0 68px; line-height:48px; margin-top:0 }
 	.post-content { margin:0px; }
 	.post-content p { font-size:14px; line-height:20px; }
     #wrapper { width:auto }

@@ -20,7 +20,7 @@
     <link rel="apple-touch-icon" href="{PortraitURL-128}"/>
     <link rel="alternate" type="application/rss+xml" href="{RSS}" />
 
-    <link rel="stylesheet" href="http://static.tumblr.com/udrhgqb/ktvnrqn9d/pc.css" media="all" />
+    <link rel="stylesheet" href="http://static.tumblr.com/udrhgqb/o9Vo0friz/pc.css" media="all" />
     <style type="text/css" media="all">
     {CustomCSS}
     </style>
@@ -46,7 +46,7 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.3&appId={text:Facebook App ID}";
+  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.4&appId={text:Facebook App ID}";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 {/block:IfFacebookAppID}
@@ -54,7 +54,7 @@
     <div id="wrapper">
         <div id="header" class="header">
             <div id="branding">
-                <h1><a href="/">{Title}</a></h1>
+                <a href="/">{Title}</a>
             </div><!-- #branding -->
         </div><!-- #header -->
 
@@ -67,9 +67,9 @@
                             <a href="{Permalink}">{block:Text}Text{/block:Text}{block:Photo}Photo{/block:Photo}{block:Photoset}Photoset{/block:Photoset}{block:Quote}Quote{/block:Quote}{block:Link}Link{/block:Link}{block:Chat}Chat{/block:Chat}{block:Video}Video{/block:Video}{block:Audio}Audio{/block:Audio}</a>
                         </div><!-- .type -->
                         {block:Title}
-                        <div class="post-title">
-                            <h3><a href="{Permalink}">{Title}</a></h3>
-                        </div>
+                        <h1 class="post-title">
+                            <a href="{Permalink}">{Title}</a>
+                        </h1>
                         {/block:Title}
                         <div class="post-content">
                         {block:Text}
