@@ -219,6 +219,9 @@ body {
                 color: #555;
                 margin-right: 20px;
                 padding: 0 0 0 20px;
+                display:inline-block;
+                height:16px;
+                line-height:16px;
             }
             .post-meta .date a {
                 background: url("http://static.tumblr.com/euguvyd/pJkl457a4/lightweight-small-icons.png") no-repeat 0 0px;
@@ -239,7 +242,9 @@ body {
 #post-notes {
     font-size: 12px;
     line-height: 1.6;
-    padding-bottom:10px;
+    padding: 10px 0;
+    background:url('http://static.tumblr.com/udrhgqb/FkXlzafyh/bg_content.png') repeat;
+    border-radius:15px;box-shadow: 2px 2px 5px #666;
 }
     #post-notes ol {
         margin-bottom:0px;
@@ -340,10 +345,6 @@ body {
         padding:10px 0px 20px;
     }
 
-	.post-meta a {
-		padding: 1px 0 1px 20px;
-	}
-
     .post-type-photo { padding:0 }
     .post-type-photo .post-content img { border-radius:15px 15px 0 0 }
     .post-type-photo .post-content .caption,
@@ -372,11 +373,9 @@ body {
     }
 
 	#post-notes {
-	    padding-bottom:0px;
-		border-top: 1px solid #ccc;
+	    margin:0 5px
 	}
 	#post-notes ol li {
-        border-bottom: 1px dotted #ccc;
 		padding: 10px 20px;
 	}
 

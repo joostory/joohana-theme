@@ -20,7 +20,7 @@
     <link rel="apple-touch-icon" href="{PortraitURL-128}"/>
     <link rel="alternate" type="application/rss+xml" href="{RSS}" />
 
-    <link rel="stylesheet" href="http://static.tumblr.com/udrhgqb/IBto0kll1/pc.css" media="all" />
+    <link rel="stylesheet" href="http://static.tumblr.com/udrhgqb/CiQo0kqfn/pc.css" media="all" />
     <style type="text/css" media="all">
     {CustomCSS}
     </style>
@@ -128,7 +128,7 @@
 
                         {block:NoteCount}
                             <div class="note-count">
-                                <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
+                                <a href="{Permalink}#post-notes">{NoteCountWithLabel}</a>
                             </div><!-- .note-count -->
                         {/block:NoteCount}
 
