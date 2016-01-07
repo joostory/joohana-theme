@@ -41,16 +41,12 @@ a img:focus, a img:hover, a img:active { border-color: #a33446; }
 body {
     background:url('http://static.tumblr.com/udrhgqb/Yj3lzahv8/bg_body.png') repeat;
 }
-#main {
-    background:url('http://static.tumblr.com/udrhgqb/FkXlzafyh/bg_content.png') repeat;
-    position:relative;
-    z-index:99;
-}
 
 /* STRUCTURE */
 #wrapper { margin:0px auto 20px; }
 #header { border:0px;position:relative; }
-#main { border:0px; border-radius:15px;box-shadow: 2px 2px 5px #666; }
+#main { border:0px;position:relative;z-index:99 }
+
 #container { }
 #footer { color: #555;font-size: 12px; padding: 20px 0; text-align:center; }
 
@@ -93,30 +89,26 @@ body {
     #search {
         display: block;
         float: right;
-        width: 205px;
+        width: 200px;
     }
-        #search input {
-            background: none;
-            border: 1px solid #ccc;
-            display: block;
-            font-size: 12px;
-        }
-        #search input.search-text {
-            float: left;
-            height: 15px;
-            padding: 4px;
-            width: 130px;
-        }
-        #search input.search-submit {
-            color: #555;
+        #search .search-text {
             float: right;
-            height: 25px;
-            padding: 3px;
-            width: 60px;
+            height: 15px;
+            padding: 4px 10px;
+            width: 130px;
+            font-size: 12px;
+            border-radius:15px;
+            border:1px solid #999;
+            background:rgba(255,255,255,0.7)
         }
 .post {
+    padding: 20px 20px 60px 80px;
     position: relative;
+    background:url('http://static.tumblr.com/udrhgqb/FkXlzafyh/bg_content.png') repeat;
+    border-radius:15px;box-shadow: 2px 2px 5px #666;
+    margin:0 0 30px
 }
+
     .post-type a {
         height: 48px; width: 48px;
         position: absolute; left: 15px; top: 20px;
@@ -156,14 +148,16 @@ body {
     }
     .post-title {
         font: 22px/1.6 Malgun Gothic,Georgia,serif;
-        font-weight:bold
+        font-weight:bold;
+        margin: 6px 0 20px;
     }
     .post-title a { color:#2e2d2d; }
     .post-title a:hover { text-decoration:none; }
     .post-content {
-        color: #81817F; letter-spacing: -1px; line-height: 1.65;
+        color: #81817F; line-height: 1.65;
         font: 13px/1.5 '돋움',dotum,Tahoma,AppleGothic,Sans-serif; margin:10px 0 15px;
     }
+    .post-content img { max-width:500px; }
     .post-content h2 { font-size:1.4em; margin:20px 0 10px }
     .post-content ul, .post-content ol {
         padding-left:30px;
@@ -308,9 +302,6 @@ body {
             background-position:right -64px;
         }
 
-.post { padding: 20px 20px 60px 80px; }
-.post img { max-width:500px; }
-.post-title { margin: 6px 0 20px; }
 #wrapper { width:600px; }
 
 @media (max-width: 630px) {
@@ -329,16 +320,20 @@ body {
 	}
 
 	#search {
-        width: 320px;
+        width: auto;
+        float: none;
 		margin:5px auto;
+        text-align:center;
     }
 
 	#search input.search-text {
 		width: 240px;
+        float:none
 	}
 
 	.post {
 	    padding: 0 10px;
+        margin: 0 5px 30px;
 	}
 
 	.post-meta {
@@ -348,6 +343,18 @@ body {
 	.post-meta a {
 		padding: 1px 0 1px 20px;
 	}
+
+    .post-type-photo { padding:0 }
+    .post-type-photo .post-content img { border-radius:15px 15px 0 0 }
+    .post-type-photo .post-content .caption,
+    .post-type-photo .post-content .tags,
+    .post-type-photo .post-meta { padding-left:10px; padding-right:10px }
+
+    .post-type-video { padding:0 }
+    .post-type-video .post-content iframe { border-radius:15px 15px 0 0 }
+    .post-type-video .post-content .caption,
+    .post-type-video .post-content .tags,
+    .post-type-video .post-meta { padding-left:10px; padding-right:10px }
 
 	.post-comment { margin-top:0; }
 

@@ -20,7 +20,7 @@
     <link rel="apple-touch-icon" href="{PortraitURL-128}"/>
     <link rel="alternate" type="application/rss+xml" href="{RSS}" />
 
-    <link rel="stylesheet" href="http://static.tumblr.com/udrhgqb/o9Vo0friz/pc.css" media="all" />
+    <link rel="stylesheet" href="http://static.tumblr.com/udrhgqb/IBto0kll1/pc.css" media="all" />
     <style type="text/css" media="all">
     {CustomCSS}
     </style>
@@ -185,8 +185,7 @@
                 </div><!-- #pages -->
                 <div id="search">
                     <form action="/search" method="get">
-                        <input type="text" name="q" value="{SearchQuery}" class="search-text" />
-                        <input type="submit" value="Search" class="search-submit" />
+                        <input type="text" name="q" value="{SearchQuery}" class="search-text" placeholder="Search" />
                     </form>
                 </div><!-- #search -->
             </div><!-- .menu -->
