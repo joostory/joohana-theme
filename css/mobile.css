@@ -37,10 +37,10 @@ h1, h2, h3, h4, h5, h6 {  font-weight:normal; clear:both; }
 a img:focus, a img:hover, a img:active { border-color: #a33446; }
 
 body {
-    background:url('http://static.tumblr.com/udrhgqb/Yj3lzahv8/bg_body.png') repeat;
+    background:url('https://static.tumblr.com/udrhgqb/Yj3lzahv8/bg_body.png') repeat;
 }
 #main {
-    background:url('http://static.tumblr.com/udrhgqb/FkXlzafyh/bg_content.png') repeat;
+    background:url('https://static.tumblr.com/udrhgqb/FkXlzafyh/bg_content.png') repeat;
     position:relative;
     z-index:99;
 }
@@ -122,28 +122,28 @@ body {
         text-indent: -9999px;
     }
     .post-type-text .post-type a {
-        background: url("http://static.tumblr.com/euguvyd/ntXl4578z/lightweight-icons.png") no-repeat 0 0;
+        background: url("https://static.tumblr.com/euguvyd/ntXl4578z/lightweight-icons.png") no-repeat 0 0;
     }
     .post-type-photo .post-type a {
-        background: url("http://static.tumblr.com/euguvyd/ntXl4578z/lightweight-icons.png") no-repeat 0 -48px;
+        background: url("https://static.tumblr.com/euguvyd/ntXl4578z/lightweight-icons.png") no-repeat 0 -48px;
     }
     .post-type-photoset .post-type a {
-        background: url("http://static.tumblr.com/euguvyd/ntXl4578z/lightweight-icons.png") no-repeat 0 -48px;
+        background: url("https://static.tumblr.com/euguvyd/ntXl4578z/lightweight-icons.png") no-repeat 0 -48px;
     }
     .post-type-quote .post-type a {
-        background: url("http://static.tumblr.com/euguvyd/ntXl4578z/lightweight-icons.png") no-repeat 0 -96px;
+        background: url("https://static.tumblr.com/euguvyd/ntXl4578z/lightweight-icons.png") no-repeat 0 -96px;
     }
     .post-type-link .post-type a {
-        background: url("http://static.tumblr.com/euguvyd/ntXl4578z/lightweight-icons.png") no-repeat 0 -144px;
+        background: url("https://static.tumblr.com/euguvyd/ntXl4578z/lightweight-icons.png") no-repeat 0 -144px;
     }
     .post-type-chat .post-type a {
-        background: url("http://static.tumblr.com/euguvyd/ntXl4578z/lightweight-icons.png") no-repeat 0 -192px;
+        background: url("https://static.tumblr.com/euguvyd/ntXl4578z/lightweight-icons.png") no-repeat 0 -192px;
     }
     .post-type-audio .post-type a {
-        background: url("http://static.tumblr.com/euguvyd/ntXl4578z/lightweight-icons.png") no-repeat 0 -240px;
+        background: url("https://static.tumblr.com/euguvyd/ntXl4578z/lightweight-icons.png") no-repeat 0 -240px;
     }
     .post-type-video .post-type a {
-        background: url("http://static.tumblr.com/euguvyd/ntXl4578z/lightweight-icons.png") no-repeat 0 -288px;
+        background: url("https://static.tumblr.com/euguvyd/ntXl4578z/lightweight-icons.png") no-repeat 0 -288px;
     }
     .post-type a:focus, .post-type a:hover {
         -webkit-transform: rotate(15deg);
@@ -225,13 +225,13 @@ body {
                 padding: 1px 0 1px 20px;
             }
             .post-meta .date a {
-                background: url("http://static.tumblr.com/euguvyd/pJkl457a4/lightweight-small-icons.png") no-repeat 0 0px;
+                background: url("https://static.tumblr.com/euguvyd/pJkl457a4/lightweight-small-icons.png") no-repeat 0 0px;
             }
             .post-meta .comments a {
-                background: url("http://static.tumblr.com/euguvyd/pJkl457a4/lightweight-small-icons.png") no-repeat 0 -16px;
+                background: url("https://static.tumblr.com/euguvyd/pJkl457a4/lightweight-small-icons.png") no-repeat 0 -16px;
             }
             .post-meta .note-count a {
-                background: url("http://static.tumblr.com/euguvyd/pJkl457a4/lightweight-small-icons.png") no-repeat 0 -32px;
+                background: url("https://static.tumblr.com/euguvyd/pJkl457a4/lightweight-small-icons.png") no-repeat 0 -32px;
             }
     .share-this-post {
         margin-top: 10px;
@@ -305,7 +305,7 @@ body {
             color: #555;
         }
         .pagination .previous-page a, .pagination .next-page a {
-            background: url("http://static.tumblr.com/euguvyd/pJkl457a4/lightweight-small-icons.png") no-repeat 0 0;
+            background: url("https://static.tumblr.com/euguvyd/pJkl457a4/lightweight-small-icons.png") no-repeat 0 0;
             display:inline-block;width:16px;height:16px;text-indent:-9999px;
         }
         .pagination .previous-page a {

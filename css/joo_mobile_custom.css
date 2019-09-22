@@ -5,7 +5,7 @@
 	display:block;
 	position:absolute;right:0;bottom:0;
 	width:160px;height:160px;
-	background:url('http://static.tumblr.com/udrhgqb/4FHlzahby/hana_joo_mix.png') no-repeat 0px -320px;
+	background:url('https://static.tumblr.com/udrhgqb/4FHlzahby/hana_joo_mix.png') no-repeat 0px -320px;
 }
 #branding h1 a:hover {
 	background-position:0px -480px;
@@ -16,7 +16,7 @@
 	text-indent:-50000px;
 	position:absolute;left:0;bottom:-70px;
 	width:160px;height:160px;
-	background:url('http://static.tumblr.com/udrhgqb/4FHlzahby/hana_joo_mix.png') no-repeat 0px -800px;
+	background:url('https://static.tumblr.com/udrhgqb/4FHlzahby/hana_joo_mix.png') no-repeat 0px -800px;
 	transition: bottom .5s ease-out 0s;
 	-moz-transition: bottom .5s ease-out 0s;
 	-webkit-transition: bottom .5s ease-out 0s;
