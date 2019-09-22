@@ -146,6 +146,7 @@ body {
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
     }
+
     .post-title {
         font: 22px/1.6 Malgun Gothic,Georgia,serif;
         font-weight:bold;
@@ -153,6 +154,27 @@ body {
     }
     .post-title a { color:#2e2d2d; }
     .post-title a:hover { text-decoration:none; }
+
+    .post-type-link .link-content {
+        background-color: rgba(255,255,255, 0.4);
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+        .post-type-link .link-content h3 {
+            margin-bottom: 5px;
+        }
+        .post-type-link .link-content h3 a {
+            color: #2e2d2d;
+        }
+        .post-type-link .link-content .excerpt {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .post-type-link .link-content .host {
+            display: block;
+            font-size: 11px;
+        }
+
     .post-content {
         color: #81817F; line-height: 1.65;
         font: 13px/1.5 '돋움',dotum,Tahoma,AppleGothic,Sans-serif; margin:10px 0 15px;
@@ -356,6 +378,7 @@ body {
     .post-type-video .post-content .caption,
     .post-type-video .post-content .tags,
     .post-type-video .post-meta { padding-left:10px; padding-right:10px }
+    .post-type-link .thumbnail { margin-top: 10px;}
 
 	.post-comment { margin-top:0; }
 

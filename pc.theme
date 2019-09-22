@@ -20,7 +20,7 @@
     <link rel="apple-touch-icon" href="{PortraitURL-128}"/>
     <link rel="alternate" type="application/rss+xml" href="{RSS}" />
 
-    <link rel="stylesheet" href="https://static.tumblr.com/udrhgqb/CiQo0kqfn/pc.css" media="all" />
+    <link rel="stylesheet" href="https://static.tumblr.com/udrhgqb/ZJYpy7jgt/pc.css" media="all" />
     <style type="text/css" media="all">
     {CustomCSS}
     </style>
@@ -89,8 +89,11 @@
                             {block:Source}<p class="quote-source">&mdash; {Source}</p>{/block:Source}
                         {/block:Quote}
                         {block:Link}
-                            <div class="post-title">
+                            {block:Thumbnail}<img src='{Thumbnail}' class='thumbnail'>{/block:Thumbnail}
+                            <div class="link-content">
                                 <h3><a href="{URL}" {Target}>{Name}</a></h3>
+                                {block:Excerpt}<em class='excerpt'>{Excerpt}</em>{/block:Excerpt}
+                                {block:Host}<abbr class='host'>{Host}</abbr>{/block:Host}
                             </div>
                             {block:Description}<div class="description">{Description}</div>{/block:Description}
                         {/block:Link}
