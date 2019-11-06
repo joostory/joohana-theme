@@ -14,6 +14,7 @@
 	width: 160px;
 	height: 160px;
 	background: url('https://static.tumblr.com/udrhgqb/4FHlzahby/hana_joo_mix.png') no-repeat;
+	background-size: 160px 960px;
 }
 .joohananet a.joo {
 	right: 0;
@@ -28,4 +29,25 @@
 }
 .joohananet a.hana:hover {
 	background-position: 0px -160px;
+}
+@media (max-width: 630px) {
+	.header { width: auto; height:140px; background: none }
+	.joohananet a {
+		background-size: 120px 720px;
+		width:120px;height:120px;
+	}
+	.joohananet a.joo {
+		right: 0;
+		background-position: 0px -240px;
+	}
+	.joohananet a.joo:hover {
+		background-position: 0px -360px;
+	}
+	.joohananet a.hana {
+		left: 0;
+		background-position: 0px 0px;
+	}
+	.joohananet a.hana:hover {
+		background-position: 0px -120px;
+	}
 }
