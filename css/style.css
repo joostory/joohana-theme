@@ -158,7 +158,7 @@ body {
     .post-type-link .link-content {
         background-color: rgba(255,255,255, 0.4);
         padding: 15px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
         .post-type-link .link-content h3 {
             margin-bottom: 5px;
@@ -174,6 +174,10 @@ body {
             display: block;
             font-size: 11px;
         }
+
+    .post .post-content .npf_row {
+        margin: 0px;
+    }
 
     .post-content {
         color: #81817F; line-height: 1.65;
@@ -200,11 +204,11 @@ body {
         .post-content ol ol li, .post-content ul ol li {
             list-style-type: lower-latin;
         }
-    .post-type-photoset .post-content .html_photoset, .post-type-video .post-content .video-wrap {
-        margin-bottom: 20px;
-    }
-    .post-type-link .post-content .link-wrap {
-        margin-bottom: 20px;
+
+    .post-type-photo .post-content .photo,
+    .post-type-photoset .post-content .html_photoset,
+    .post-type-video .post-content .video-wrap {
+        margin-bottom: 10px;
     }
     .post-type-chat .post-content .label {
         color: #333;
@@ -359,26 +363,33 @@ body {
 	}
 
 	.post {
-	    padding: 0 10px;
+	    padding: 0;
         margin: 0 5px 30px;
-	}
+    }
+    
 
-	.post-meta {
+    .post-meta {
         padding:10px 0px 20px;
     }
+    .post .post-content .post-text,
+    .post .post-content .caption,
+    .post .post-content .tags,
+    .post .post-meta { padding-left:10px; padding-right:10px; }
 
+    .post-type-photoset,
+    .post-type-video,
     .post-type-photo { padding:0 }
-    .post-type-photo .post-content img { border-radius:15px 15px 0 0 }
-    .post-type-photo .post-content .caption,
-    .post-type-photo .post-content .tags,
-    .post-type-photo .post-meta { padding-left:10px; padding-right:10px }
-
-    .post-type-video { padding:0 }
-    .post-type-video .post-content iframe { border-radius:15px 15px 0 0 }
-    .post-type-video .post-content .caption,
-    .post-type-video .post-content .tags,
-    .post-type-video .post-meta { padding-left:10px; padding-right:10px }
+    
+    .post .post-content .post-text,
+    .post-type-photoset .post-content .photoset,
+    .post-type-video .post-content iframe,
+    .post-type-photo .post-content img { border-radius:15px 15px 0 0; overflow:hidden; }
     .post-type-link .thumbnail { margin-top: 10px;}
+
+    .post .post-content .npf_row {
+        margin-left:-10px;
+        margin-right:-10px;
+    }
 
 	.post-comment { margin-top:0; }
 
