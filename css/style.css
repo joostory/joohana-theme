@@ -386,10 +386,15 @@ body {
     .post-type-photoset .post-content .photoset,
     .post-type-video .post-content iframe,
     .post-type-photo .post-content img { border-radius:15px 15px 0 0; overflow:hidden; }
+    .post-type-link .post-content > :first-child,
+    .post-type-text .post-content > .npf_row:first-child{
+        border-radius: 15px 15px 0 0;
+        overflow: hidden;
+    }
 
     .post .post-content .npf_row {
-        margin-left:-10px;
-        margin-right:-10px;
+        margin-left:0px;
+        margin-right:0px;
     }
 
 	.post-comment { margin-top:0; }
@@ -417,7 +422,7 @@ body {
 	.post img { max-width:100%; height:auto }
 	.post iframe { max-width:100%; }
 	.post .post-type { display:none; }
-	.post-title { padding:10px 0 0 68px; line-height:48px; margin-top:0 }
+	.post-title { padding:15px 0 0 10px; margin:0 0 10px; }
 	.post-content { margin:0px; }
 	.post-content p { font-size:14px; line-height:20px; }
     #wrapper { width:auto }
