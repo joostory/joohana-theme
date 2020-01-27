@@ -181,7 +181,7 @@ body {
 
     .post-content {
         color: #81817F; line-height: 1.65;
-        font: 13px/1.5 '돋움',dotum,Tahoma,AppleGothic,Sans-serif; margin:10px 0 15px;
+        font: 13px/1.5 '돋움',dotum,Tahoma,AppleGothic,Sans-serif; margin:10px 0 55px;
     }
     .post-content img { max-width:500px; }
     .post-content h2 { font-size:1.4em; margin:20px 0 10px }
