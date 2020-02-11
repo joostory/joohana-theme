@@ -186,6 +186,7 @@ body {
     .post-content img { max-width:100%; }
     .post-content h2 { font-size:1.4em; margin:20px 0 10px }
     .post-content iframe { max-width:100%; }
+    .post-content hr { margin: 3em; }
     .post-content ul, .post-content ol {
         padding-left:30px;
     }
