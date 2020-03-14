@@ -44,6 +44,7 @@
 	#branding a:hover {background-position:0 -360px;}
 	.joohananet a{
 		width:120px;height:120px;bottom:-50px;
+		left: 15px;
 		background:url(https://static.tumblr.com/udrhgqb/nido0knr6/hana_joo_mix_mobile.png) no-repeat 0 -600px;
 	}
 }
