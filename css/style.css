@@ -206,6 +206,12 @@ body {
         .post-content ol ol li, .post-content ul ol li {
             list-style-type: lower-latin;
         }
+    .post-content .read-more { display:inline-block; padding: 5px 15px; border: 1px solid #ccc; color: #555; }
+    .post-content .read-more:hover {
+      border-color: #a33446;
+      color: #a33446;
+      text-decoration: none;
+    }
 
     .post-type-photo .post-content .photo,
     .post-type-photoset .post-content .html_photoset,
