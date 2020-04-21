@@ -270,8 +270,8 @@ body {
     .share-this-post {
         margin-top: 10px;
     }
-.fb-like { margin:0 0; }
-.fb-comments { margin: 0 0; }
+.fb-like { margin:0; }
+.fb-comments { margin:0; }
 
 #post-notes {
     font-size: 12px;
@@ -404,6 +404,8 @@ body {
         margin-left:0px;
         margin-right:0px;
     }
+    .post-content .read-more-container { margin: 15px; }
+
 
 	.post-comment { margin-top:0; }
 
@@ -434,4 +436,5 @@ body {
 	.post-content { margin:0px; }
 	.post-content p { font-size:14px; line-height:20px; }
     #wrapper { width:auto }
+  .comments-wrap { padding: 0 7px; }
 }
