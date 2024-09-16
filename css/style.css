@@ -105,8 +105,10 @@ body {
     padding: 20px 20px 60px 80px;
     position: relative;
     background:url('https://static.tumblr.com/udrhgqb/FkXlzafyh/bg_content.png') repeat;
-    border-radius:15px;box-shadow: 2px 2px 5px #666;
-    margin:0 0 30px
+    border-radius:15px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px #666;
+    margin:0 0 30px;
 }
 
     .post-type a {
@@ -389,20 +391,9 @@ body {
     .post-type-video,
     .post-type-photo { padding:0 }
     
-    .post .post-content .post-text,
-    .post-type-link .thumbnail,
-    .post-type-photoset .post-content .photoset,
-    .post-type-video .post-content iframe,
-    .post-type-photo .post-content img { border-radius:15px 15px 0 0; overflow:hidden; }
-    .post-type-link .post-content > :first-child,
-    .post-type-text .post-content > .npf_row:first-child{
-        border-radius: 15px 15px 0 0;
-        overflow: hidden;
-    }
-
     .post .post-content .npf_row {
-        margin-left:0px;
-        margin-right:0px;
+        margin-left:-15px;
+        margin-right:-15px;
     }
     .post-content .read-more-container { margin: 15px; }
 
