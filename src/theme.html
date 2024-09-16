@@ -81,7 +81,7 @@
                   {block:IndexPage}
                     <div id="summary-{PostId}" class="post-text" style="margin-bottom: 15px"></div>
                     <script type='text/javascript'>
-                      (function(npf) {
+                      (function(contentId, npf) {
                         let content = ""
                         const img = npf.content.find(it => it.type == 'image')
                         if (img) {
@@ -98,8 +98,8 @@
                           content += "<p>" + text + "</p>"
                         }
 
-                        document.getElementById("summary-{PostId}").innerHTML = content
-                      })({NPF});
+                        document.getElementById(contentId).innerHTML = content
+                      })("summary-{PostId}", {NPF});
                     </script>
                   {/block:IndexPage}
                 {/block:Text}
