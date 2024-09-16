@@ -82,10 +82,23 @@
                     <div id="summary-{PostId}" class="post-text" style="margin-bottom: 15px"></div>
                     <script type='text/javascript'>
                       (function(npf) {
+                        let content = ""
                         const img = npf.content.find(it => it.type == 'image')
                         if (img) {
-                          document.getElementById("summary-{PostId}").innerHTML = `<div class='npf_row'><div class='npf_col'><img src='${img['media'][1]['url']}' /></div></div>`
+                          let imgSrc = img['media'][1]['url']
+                          content = "<div class='npf_row'><div class='npf_col'><img src='" + imgSrc + "' /></div></div>"
                         }
+
+                        const summary = npf.content.find(it => it['type'] == 'text' && !it['subtype'])
+                        if (summary) {
+                          let text = summary['text']
+                          if (text.length > 100) {
+                            text = text.substr(0, 100) + "..."
+                          }
+                          content += "<p>" + text + "</p>"
+                        }
+
+                        document.getElementById("summary-{PostId}").innerHTML = content
                       })({NPF});
                     </script>
                   {/block:IndexPage}
