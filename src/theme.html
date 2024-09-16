@@ -25,6 +25,7 @@
   {CustomCSS}
   </style>
 
+  <script src="https://static.tumblr.com/udrhgqb/Lf3sjwh6x/script.js"></script>
   {block:IfGoogleAnalyticsID}
   <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -80,26 +81,18 @@
                   {/block:PermalinkPage}
                   {block:IndexPage}
                     <div id="summary-{PostId}" class="post-text" style="margin-bottom: 15px"></div>
-                    <script type='text/javascript'>
-                      (function(contentId, npf) {
-                        let content = ""
-                        const img = npf.content.find(it => it.type == 'image')
-                        if (img) {
-                          let imgSrc = img['media'][1]['url']
-                          content = "<div class='npf_row'><div class='npf_col'><img src='" + imgSrc + "' /></div></div>"
-                        }
-
-                        const summary = npf.content.find(it => it['type'] == 'text' && !it['subtype'])
-                        if (summary) {
-                          let text = summary['text']
-                          if (text.length > 100) {
-                            text = text.substr(0, 100) + "..."
+                    <script>
+                        new Promise((resolve, reject) => {
+                          const contentId = "summary-{PostId}"
+                          if (makeSummaryFromNpf) {
+                            makeSummaryFromNpf(contentId, {NPF});
+                            resolve("OK SUMMARY " + contentId)
+                          } else {
+                            reject("NO SUMMARY FUNCTION " + contentId)
                           }
-                          content += "<p>" + text + "</p>"
-                        }
-
-                        document.getElementById(contentId).innerHTML = content
-                      })("summary-{PostId}", {NPF});
+                        })
+                          .then(r => console.debug(r))
+                          .catch(e => console.error(e))
                     </script>
                   {/block:IndexPage}
                 {/block:Text}
@@ -226,7 +219,7 @@
 
       {block:PermalinkPagination}
         {block:NextPost}<span class="previous-page"><a href="{NextPost}">Newer Post</a></span>{/block:NextPost}
-        <span class="page-number">&nbsp;</span>
+        <span class="page-number" style="margin: 0 10px"></span>
         {block:PreviousPost}<span class="next-page"><a href="{PreviousPost}">Older Post</a></span>{/block:PreviousPost}
       {/block:PermalinkPagination}
     </div><!-- .pagination -->
@@ -252,7 +245,10 @@
     </div><!-- #access -->
 
     <div id="footer">
-      <div class="copyright">&copy; <a href="/">{Title}</a>. All Rights Reserved. Powered by <a href="https://tumblr.com">Tumblr</a>.</div>
+      <div class="copyright">
+        {CopyrightYears} &copy; <a href="/">{Title}</a>.<br>
+        All Rights Reserved. Powered by <a href="https://tumblr.com">Tumblr</a>.
+      </div>
     </div><!-- #footer -->
   </div><!-- #wrapper -->
 

@@ -1,4 +1,5 @@
- .header {
+.tmblr-iframe { display:none; }
+.header {
  	width: 600px;
  	height: 450px;
  	background: url(https://static.tumblr.com/la9jxgj/459lzajm0/hana_blog.png) no-repeat 0 0;
