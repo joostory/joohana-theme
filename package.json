@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/joostory/joohana-theme#readme",
   "devDependencies": {
-    "tumblr-theme-preview": "^1.0.2"
+    "tumblr-theme-preview": "^1.1.1"
   }
 }
