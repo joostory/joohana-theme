@@ -303,9 +303,6 @@ body {
     #post-notes ol li {
         padding: 8px 20px;
     }
-    #post-notes ol li.original_post {
-        display:none;
-    }
     #post-notes ol li:last-child {
         border-bottom:0px;
     }
