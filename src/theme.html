@@ -219,9 +219,10 @@
       {/block:Pagination}
 
       {block:PermalinkPagination}
-        {block:NextPost}<span class="previous-page"><a href="{NextPost}">Newer Post</a></span>{/block:NextPost}
-        <span class="page-number" style="margin: 0 10px"></span>
-        {block:PreviousPost}<span class="next-page"><a href="{PreviousPost}">Older Post</a></span>{/block:PreviousPost}
+        <div class="post-nav">
+          {block:NextPost}<span class="previous-page"><a href="{NextPost}">Newer Post</a></span>{/block:NextPost}
+          {block:PreviousPost}<span class="next-page"><a href="{PreviousPost}">Older Post</a></span>{/block:PreviousPost}
+        </div>
       {/block:PermalinkPagination}
     </div><!-- .pagination -->
 
