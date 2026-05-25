@@ -1,0 +1,24 @@
+{
+  "name": "joohana-theme",
+  "version": "1.0.0",
+  "description": "[joohana.net](https://joohana.net)에서 사용할 테마입니다.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tumblr-theme-preview -t src/theme.html -s src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joostory/joohana-theme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/joostory/joohana-theme/issues"
+  },
+  "homepage": "https://github.com/joostory/joohana-theme#readme",
+  "devDependencies": {
+    "tumblr-theme-preview": "^1.0.2"
+  }
+}
