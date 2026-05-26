@@ -197,7 +197,7 @@ body {
         color: #81817F; line-height: 1.65;
         font: 13px/1.5 '돋움',dotum,Tahoma,AppleGothic,Sans-serif; margin:10px 0 55px;
     }
-    .post-content img { max-width:100%; }
+    .post-content img { max-width:100%; border-radius: 12px; }
     .post-content h2 { font-size:1.4em; margin:20px 0 10px }
     .post-content iframe { max-width:100%; }
     .post-content hr { margin: 3em; }
@@ -220,7 +220,14 @@ body {
         .post-content ol ol li, .post-content ul ol li {
             list-style-type: lower-latin;
         }
-    .post-content .read-more { display:inline-block; padding: 5px 15px; border: 1px solid #ccc; color: #555; }
+    .post-content .read-more {
+      display:inline-block;
+      padding: 5px 15px;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      color: #555;
+      transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), all 0.25s ease;
+    }
     .post-content .read-more:hover {
       border-color: #a33446;
       color: #a33446;
@@ -418,6 +425,7 @@ body {
     .post-type-video,
     .post-type-photo { padding:0 }
     
+    .post-content img { border-radius: 0; }
     .post .post-content .npf_row {
         margin-left:-15px;
         margin-right:-15px;
