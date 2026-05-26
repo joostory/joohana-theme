@@ -1,6 +1,6 @@
 {
   "name": "joohana-theme",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "[joohana.net](https://joohana.net)에서 사용할 테마입니다.",
   "main": "index.js",
   "scripts": {
