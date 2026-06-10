@@ -251,6 +251,14 @@ body {
   font-size: 12px;
   margin-bottom: 10px;
   margin-top:55px;
+  padding-left: 20px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23555555' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z'></path><line x1='7' y1='7' x2='7.01' y2='7'></line></svg>");
+  background-size: 14px 14px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
 }
 .tags a {
   border: 1px solid #ccc;
@@ -258,6 +266,7 @@ body {
   color: #555;
   margin-right: 1px;
   padding: 2px 10px;
+  transition: all 0.25s ease;
 }
 .tags a:focus, .tags a:hover {
   border-color: #a33446;
@@ -304,6 +313,7 @@ body {
   padding: 10px 0;
   background:url('https://static.tumblr.com/udrhgqb/FkXlzafyh/bg_content.png') repeat;
   border-radius:15px;box-shadow: 2px 2px 5px #666;
+  margin-bottom: 30px;
 }
 #post-notes ol {
   margin-bottom:0px;
@@ -409,7 +419,6 @@ body {
     padding: 0;
     margin: 0 10px 30px;
   }
-    
 
   .post-meta {
     padding:10px 0px 20px;
@@ -447,11 +456,15 @@ body {
   }
 
 	#post-notes {
-    margin:0 5px
+    margin: 0 10px 30px;
 	}
 	#post-notes ol li {
 		padding: 10px 20px;
 	}
+
+  .pagination {
+    margin: 0 10px;
+  }
 
 	.post img { max-width:100%; height:auto }
 	.post iframe { max-width:100%; }

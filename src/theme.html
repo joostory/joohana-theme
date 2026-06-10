@@ -165,15 +165,16 @@
                   </div>
                 {/block:IndexPage}
                 
-                {block:PermalinkPage}
-                  {block:HasTags}
-                    <div class="tags">
-                      Tags: {block:Tags}<a href="{TagURL}" class="single-tag">{Tag}</a> {/block:Tags}
-                    </div>
-                  {/block:HasTags}
-                {/block:PermalinkPage}
               </div><!-- post-content -->
               
+              {block:PermalinkPage}
+                {block:HasTags}
+                  <div class="tags">
+                    {block:Tags}<a href="{TagURL}" class="single-tag">{Tag}</a>{/block:Tags}
+                  </div>
+                {/block:HasTags}
+              {/block:PermalinkPage}
+
               <div class="post-meta">
                 {block:Date}
                   <div class="date">
