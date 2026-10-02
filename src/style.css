@@ -247,6 +247,9 @@ body {
 .post-type-audio .post-content .caption {
   margin-top: 20px;
 }
+.post-type-quote .quote-content {
+  padding-bottom: 15px;
+} 
 .tags {
   font-size: 12px;
   margin-bottom: 10px;
@@ -424,10 +427,12 @@ body {
     padding:10px 0px 20px;
   }
   .post .post-content .post-text,
+  .post .post-content .quote-content,
   .post .post-content .caption,
-  .post .post-content .tags,
   .post-type-link .description,
   .post .post-meta { padding-left:15px; padding-right:15px; }
+
+  .post .tags { margin-left:15px; }
 
   .post-type-photoset,
   .post-type-video,
