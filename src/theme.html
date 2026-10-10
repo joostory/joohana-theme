@@ -167,13 +167,11 @@
                 
               </div><!-- post-content -->
               
-              {block:PermalinkPage}
-                {block:HasTags}
-                  <div class="tags">
-                    {block:Tags}<a href="{TagURL}" class="single-tag">{Tag}</a>{/block:Tags}
-                  </div>
-                {/block:HasTags}
-              {/block:PermalinkPage}
+              {block:HasTags}
+                <div class="tags">
+                  {block:Tags}<a href="{TagURL}" class="single-tag">{Tag}</a>{/block:Tags}
+                </div>
+              {/block:HasTags}
 
               <div class="post-meta">
                 {block:Date}

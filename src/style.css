@@ -432,7 +432,7 @@ body {
   .post-type-link .description,
   .post .post-meta { padding-left:15px; padding-right:15px; }
 
-  .post .tags { margin-left:15px; }
+  .post .tags { margin-left:15px; margin-right:15px; }
 
   .post-type-photoset,
   .post-type-video,
