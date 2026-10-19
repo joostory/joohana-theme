@@ -37,15 +37,22 @@
 	bottom: 0;
 }
 @media (max-width: 630px) {
-	.header { width: auto; height:140px; background: none }
+	.header { width: auto; height: 140px; background: none; }
 	#branding a, #branding a:active {
-		width:120px;height:120px;
+		width: 120px;
+    height: 120px;
 		background:url(https://static.tumblr.com/udrhgqb/nido0knr6/hana_joo_mix_mobile.png) no-repeat 0 -240px;
 	}
-	#branding a:hover {background-position:0 -360px;}
-	.joohananet a{
-		width:120px;height:120px;bottom:-50px;
+	#branding a:hover { background-position: 0 -360px; }
+	.joohananet a {
+		width: 120px;
+		height: 120px;
+		bottom: -50px;
 		left: 15px;
 		background:url(https://static.tumblr.com/udrhgqb/nido0knr6/hana_joo_mix_mobile.png) no-repeat 0 -600px;
 	}
 }
+
+.opengraph { border-radius: 10px; }
+.tmblr-iframe,
+.tmblr-iframe.tmblr-iframe--follow-teaser.open { display:none; }
